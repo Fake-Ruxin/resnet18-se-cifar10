@@ -1,0 +1,18 @@
+{
+  "model": "resnet18",
+  "epochs": 40,
+  "batch_size": 128,
+  "learning_rate": 0.1,
+  "seed": 42,
+  "num_workers": 0,
+  "optimizer": "SGD",
+  "momentum": 0.9,
+  "weight_decay": 0.0005,
+  "scheduler": "CosineAnnealingLR",
+  "selection_metric": "validation_accuracy",
+  "train_samples": 45000,
+  "validation_samples": 5000,
+  "device": "NVIDIA GeForce RTX 4060 Ti",
+  "torch_version": "2.11.0+cu128",
+  "cuda_version": "12.8"
+}

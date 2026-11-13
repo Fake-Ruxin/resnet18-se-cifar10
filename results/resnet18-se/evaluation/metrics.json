@@ -1,0 +1,95 @@
+{
+  "model": "resnet18-se",
+  "checkpoint_epoch": 38,
+  "validation_accuracy": 0.944,
+  "test_samples": 10000,
+  "test_accuracy": 0.9356,
+  "classification_report": {
+    "airplane": {
+      "precision": 0.928919182083739,
+      "recall": 0.954,
+      "f1-score": 0.9412925505673408,
+      "support": 1000.0
+    },
+    "automobile": {
+      "precision": 0.9651046859421735,
+      "recall": 0.968,
+      "f1-score": 0.9665501747378932,
+      "support": 1000.0
+    },
+    "bird": {
+      "precision": 0.9157472417251755,
+      "recall": 0.913,
+      "f1-score": 0.9143715573360041,
+      "support": 1000.0
+    },
+    "cat": {
+      "precision": 0.8808777429467085,
+      "recall": 0.843,
+      "f1-score": 0.86152273888605,
+      "support": 1000.0
+    },
+    "deer": {
+      "precision": 0.9310009718172984,
+      "recall": 0.958,
+      "f1-score": 0.9443075406604239,
+      "support": 1000.0
+    },
+    "dog": {
+      "precision": 0.89128305582762,
+      "recall": 0.91,
+      "f1-score": 0.9005442850074221,
+      "support": 1000.0
+    },
+    "frog": {
+      "precision": 0.9493041749502982,
+      "recall": 0.955,
+      "f1-score": 0.9521435692921236,
+      "support": 1000.0
+    },
+    "horse": {
+      "precision": 0.9752832131822863,
+      "recall": 0.947,
+      "f1-score": 0.960933536276002,
+      "support": 1000.0
+    },
+    "ship": {
+      "precision": 0.9627391742195368,
+      "recall": 0.956,
+      "f1-score": 0.9593577521324637,
+      "support": 1000.0
+    },
+    "truck": {
+      "precision": 0.9558232931726908,
+      "recall": 0.952,
+      "f1-score": 0.9539078156312625,
+      "support": 1000.0
+    },
+    "accuracy": 0.9356,
+    "macro avg": {
+      "precision": 0.9356082735867526,
+      "recall": 0.9356,
+      "f1-score": 0.9354931520526988,
+      "support": 10000.0
+    },
+    "weighted avg": {
+      "precision": 0.9356082735867527,
+      "recall": 0.9356,
+      "f1-score": 0.9354931520526987,
+      "support": 10000.0
+    }
+  },
+  "parameters": 11263042,
+  "conv_linear_macs_per_image": 555509760,
+  "macs_scope": "Conv2d and Linear only; excludes batch norm, activations, pooling and SE elementwise multiplication",
+  "checkpoint_bytes": 45136235,
+  "latency": {
+    "mean_ms": 7.377861003081004,
+    "median_ms": 7.291823863983154,
+    "warmup": 50,
+    "repeats": 300,
+    "batch_size": 1
+  },
+  "device": "NVIDIA GeForce RTX 4060 Ti",
+  "torch_version": "2.11.0+cu128"
+}
